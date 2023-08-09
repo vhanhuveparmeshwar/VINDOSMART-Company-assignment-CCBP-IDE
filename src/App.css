@@ -1,38 +1,133 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: Bree serif;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+  font-size: 45px;
+  font-weight: 800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.movie-item {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.movie-item img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.movie-details {
+  flex: 1;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: transparent;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #007bff;
+  border-radius: 8px;
+  padding: 9px;
+  border-width: 0;
+  color: white;
+  text-align: center;
+  margin-left: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.search-input {
+  width: 40%;
+  border-width: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 5px;
+  border-width: 0;
+}
+
+.rating-box {
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 5px;
+  border-width: 0;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 800;
+  margin-right: 8px;
+}
+
+.image {
+  margin-left: 15px;
+  border-radius: 8px;
+  width: 500px;
+  height: 800px;
+}
+
+.movie-title {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.release-date {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.rating {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.movie-item img {
+  width: 120px;
+  height: auto;
+  margin-right: 10px;
 }
